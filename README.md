@@ -1,6 +1,7 @@
 # AZA_Robbery
 Script in LUA supermarket robbery
 
+__________
 
 License
 AZA_Robbery - for FiveM
