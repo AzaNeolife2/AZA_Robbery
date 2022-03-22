@@ -48,16 +48,15 @@ Citizen.CreateThread(function()
                 if dist <= 1.0 then
                     ESX.ShowHelpNotification("Appuyez sur [~b~E~w~] pour commencer à derober.")
                     if IsControlJustPressed(1,51) then
-                        TriggerEvent("aza:animandprogress")
-                        --spawnCar("faggio")
+                        TriggerEvent("aza:animAndProgress")
                     end
                 end
             end
         end
     end)
 
-RegisterNetEvent('aza:animandprogress')
-AddEventHandler('aza:animandprogress', function()
+RegisterNetEvent('aza:animAndProgress')
+AddEventHandler('aza:animAndProgress', function()
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, "WORLD_HUMAN_WELDING", 0, true)
     exports['progressBars']:startUI(20000, "Vous êtes entrain de crocheter...")
